@@ -1,4 +1,4 @@
-function autoSama(data) {
+function autoRelated(data) {
     	    
 	
 	var SPINTAX_PATTERN = /\{[^"\r\n\}]*\}/;
@@ -14,12 +14,12 @@ function autoSama(data) {
  var sample_str="{adalah|merupakan|pencarian} {yang paling sesuai|yang anda butuhkan}";
  var sample_str1="{Semua yang|Apa yang|Pencarian yang} {ente|anda|saudara|teman}";
  
-    
-    	var kw = out[0];
+    for (i = 0; i < out.length; i++) {
+    	var kw = out[i];
 		var kata = spin(sample_str);
 		var kata1 = spin(sample_str1);
         dom += `<b>${kw}</b> ${kata} dengan ${postTitle}. ${kata1} lihat sebagai referensi untuk menentukan sesuai dengan kenginan. Oleh karena itu, jangan ragu untuk menyimpan data ${kw}. Jika suatu saat anda memerlukannya, akan memudahkan anda untuk mencarinya.`;
 		
-		
+	}
     
 }
