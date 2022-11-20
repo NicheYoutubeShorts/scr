@@ -1,4 +1,4 @@
-function autoRelated(data) {
+function autoSama(data) {
     	    
 	
 	var SPINTAX_PATTERN = /\{[^"\r\n\}]*\}/;
